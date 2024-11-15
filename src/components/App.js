@@ -5,6 +5,7 @@ function App() {
     <div>
       <h1>Travel Assistant</h1>
       <p>Welcome to your smart travel companion!</p>
+      <p>Hello</p>
     </div>
   );
 }
