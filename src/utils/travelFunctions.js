@@ -1,5 +1,3 @@
-// src/utils/travelFunctions.js
-
 import { DAILY_FOOD_COST, DAILY_ACCOMMODATION_COST } from './constants';
 
 // Calculate travel duration in days
