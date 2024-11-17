@@ -1,24 +1,18 @@
-let travelList = [];
+import React from 'react';
 
-// Function to add a new travel
-const addTravel = (destination, startDate, endDate, budget) => {
-    const newTravel = {
-        id: Date.now(),
-        destination,
-        startDate,
-        endDate,
-        budget,
-        activities: []
-    };
-    travelList.push(newTravel);
-    return newTravel;
-};
+function Travels({ travels }) {
+    return (
+        <div>
+            <h2>Your Travels</h2>
+            <ul>
+                {travels.map(travel => (
+                    <li key={travel.id}>
+                        {travel.destination}: {travel.startDate} - {travel.endDate}
+                    </li>
+                ))}
+            </ul>
+        </div>
+    );    
+}
 
-// Function to display travel list using a loop
-const showTravelList = () => {
-    travelList.forEach(travel => {
-        console.log(`Destination: ${travel.destination}, Dates: ${travel.startDate} - ${travel.endDate}`);
-    });
-};
-
-export { addTravel, showTravelList, travelList };  
+export default TravelList;
