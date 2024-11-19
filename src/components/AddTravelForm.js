@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import Button from './ui/Button';
+import Input from './ui/Input';
+import Card from './ui/Card';
 
 function AddTravelForm({ onAddTravel }) {
     const [destination, setDestination] = useState('');
@@ -11,29 +14,31 @@ function AddTravelForm({ onAddTravel }) {
         setDestination('');
         setStartDate('');
         setEndDate('');
-      };
-    
-      return (
-        <form onSubmit={handleSubmit}>
-          <input 
-            type="text" 
-            placeholder="Destination" 
-            value={destination} 
-            onChange={(e) => setDestination(e.target.value)} 
-          />
-          <input 
-            type="date" 
-            value={startDate} 
-            onChange={(e) => setStartDate(e.target.value)} 
-          />
-          <input 
-            type="date" 
-            value={endDate} 
-            onChange={(e) => setEndDate(e.target.value)} 
-          />
-          <button type="submit">Add Travel</button>
-        </form>
-      );
-    }
-    
-    export default AddTravelForm;
+    };
+
+    return (
+        <Card>
+            <form onSubmit={handleSubmit}>
+                <Input 
+                    type="text" 
+                    placeholder="Destination" 
+                    value={destination} 
+                    onChange={(e) => setDestination(e.target.value)} 
+                />
+                <Input 
+                    type="date" 
+                    value={startDate} 
+                    onChange={(e) => setStartDate(e.target.value)} 
+                />
+                <Input 
+                    type="date" 
+                    value={endDate} 
+                    onChange={(e) => setEndDate(e.target.value)} 
+                />
+                <Button type="submit">Add Travel</Button>
+            </form>
+        </Card>
+    );
+}
+
+export default AddTravelForm;
