@@ -20,4 +20,13 @@ export default StyleSheet.create({
     fontSize: 36,
     color: "#38434D",
   },
+  input: {
+    height: 40,
+    borderColor: '#ccc',
+    borderWidth: 1,
+    marginBottom: 20,
+    paddingHorizontal: 10,
+    width: '100%',
+    maxWidth: 300,
+  },
 });
