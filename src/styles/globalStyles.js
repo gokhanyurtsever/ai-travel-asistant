@@ -1,3 +1,4 @@
+// src/styles/globalStyles.js
 import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
@@ -12,14 +13,6 @@ export default StyleSheet.create({
     maxWidth: 960,
     marginHorizontal: "auto",
   },
-  title: {
-    fontSize: 64,
-    fontWeight: "bold",
-  },
-  subtitle: {
-    fontSize: 36,
-    color: "#38434D",
-  },
   input: {
     height: 40,
     borderColor: '#ccc',
@@ -29,4 +22,41 @@ export default StyleSheet.create({
     width: '100%',
     maxWidth: 300,
   },
+  title: {
+    fontSize: 64,
+    fontWeight: "bold",
+  },
+  subtitle: {
+    fontSize: 36,
+    color: "#38434D",
+  },
+  button: {
+    backgroundColor: '#007AFF',
+    padding: 10,
+    borderRadius: 5,
+    marginTop: 20,
+  },
+  buttonText: {
+    color: 'white',
+    fontSize: 16,
+    textAlign: 'center',
+  },
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

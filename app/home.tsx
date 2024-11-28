@@ -10,8 +10,8 @@ export default function Home() {
     <View style={styles.container}>
       <Text style={styles.title}>Travel Assistant</Text>
       <Text style={styles.subtitle}>Your Journey Starts Here</Text>
-      <TouchableOpacity onPress={() => router.push('/travelList' as any)}>
-  <Text style={{ color: 'red' }}>View Travel List</Text>
+      <TouchableOpacity style={styles.button} onPress={() => router.push('/travelList')}>
+        <Text style={styles.buttonText}>View Travel List</Text>
       </TouchableOpacity>
     </View>
   );

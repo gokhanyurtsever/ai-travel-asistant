@@ -1,3 +1,4 @@
+// src/screens/TravelList.tsx
 import React from 'react';
 import { View, Text, FlatList } from 'react-native';
 import styles from '../src/styles/globalStyles';
